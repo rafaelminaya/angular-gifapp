@@ -1,0 +1,9 @@
+<div class="col">
+    <h5>Buscar:</h5>
+    <!-- (keyup) : Evento que se lanza al presionar cualquier tecla -->
+    <!-- (keyup.enter)="buscar(txtbuscar.value) : Evento que se dispara al presionar la tecla "enter",
+        enviando por argumento el "value" de la referencia local "#txtbuscar"
+      -->
+    <!-- <input type="text" class="form-control" placeholder="Buscar gifs..." (keyup.enter)="buscar2(txtBuscar.value)" -->
+    <input type="text" class="form-control" placeholder="Buscar gifs..." (keyup.enter)="buscar()" #txtBuscar>
+</div>

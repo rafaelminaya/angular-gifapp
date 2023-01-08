@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+/* Habilitamos el uso de todo el alto del navegador */
+html, body{
+    height: 100%;
+}
+
+/* Indicaremos que el side bar se extenderá hasta abajo */
+#sidebar{
+    height: 100%; /* el tamaño máximo será todo el alto de la pantallla */
+    min-height: 100vh;  /* El tamaño mínimo será todo el alto que haya en la pantalla */
+    min-width: 180px;  /* el mínimo ancho de 180px */
+}

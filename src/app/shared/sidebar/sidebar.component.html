@@ -1,0 +1,18 @@
+<!--  fondo oscuro, borde a la derecha, padding general de 3 puntos-->
+<div class="bg-dark border-right p-3" id="sidebar">
+    <!-- texto color claro -->
+    <h3 class="text-light">Gifs-App</h3>
+
+    <hr class="text-white">
+
+    <!-- Definimos el contenido del side bar -->
+    <!-- list group, quitamos los bullet points -->
+    <div class="list-group list-reset">
+        <!-- item de list group, diseño en forma de botón -->
+        <!-- titlecase : Pipe que permite añadir las mayúculas a la perima letra de las palabras -->
+        <a *ngFor="let item of historial" (click)="buscar(item)" href="#"
+            class="list-group-item list-group-item-action">
+            {{ item | titlecase }}
+        </a>
+    </div>
+</div>
